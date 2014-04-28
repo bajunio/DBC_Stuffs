@@ -1,0 +1,40 @@
+
+
+#container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 1000px;
+	background-color:cyan;
+
+}
+
+#logo {
+	background-color: purple;
+	
+	width: 200px;
+	height: 200px;
+
+}
+
+#header {
+	
+	background-color: green;
+	float:right;
+	
+
+}
+
+#sidebar {
+	clear: left;
+	background-color: yellow;
+	
+	width: 60px;
+
+}
+
+#content {
+	background-color: blue;
+	float: right;
+	width: 600px;
+
+}

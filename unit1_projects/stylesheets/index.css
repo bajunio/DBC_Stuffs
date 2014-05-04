@@ -1,0 +1,74 @@
+		@font-face { font-family: Futurama; src: url('fonts/futuramabold.ttf'); } 
+
+
+		h1 {
+    		
+    		color:rgb(0, 61, 255);
+    		font-size: 75px;
+		}
+
+		h2 {
+			font-family: Futurama;
+			color:rgb(0, 61, 255);
+			font-size: 40px;
+
+		}
+
+
+		html { 
+  		background: url(images/bender_background.jpg) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		font-family: Futurama;
+
+		}
+
+		#name_container {
+			position: relative;
+			top: 550px;				
+			left: 145px;
+			height: 50px;
+			width: 700px;
+		}
+		
+
+		#list_container {
+
+			position: fixed;
+			top: 60px;
+			left: 1000px;
+			height: 400px;
+			width: 500px;
+			
+
+		}
+
+		li {
+			/* list-style-image: url('images/planet_express.gif'); */
+			color: green;
+			font-size: 35px;
+			padding:0;
+			margin: 25px;
+			margin-left: 0px;
+
+
+
+		}
+
+		#li1 {
+			list-style-image: url('images/lars.png');
+   		}	
+
+		#li2 {
+   			list-style-image: url('images/farnsworth.png');
+		}
+
+		#li3 {
+			list-style-image: url('images/zoidberg.png');
+		}
+
+		#li4 {
+			list-style-image: url('images/fry.png');
+		}

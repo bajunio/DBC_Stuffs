@@ -1,58 +1,121 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Landing Page</title>
 
-	<head>
-		<title>This is my DBC page.</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-	</head>
-
-	<body>
-		<h1>Memetime</h1>
-		<p>One does <strong>not</strong> simply <i>speak</i> HTML...</p>
+	<style type="text/css">
 		
-		<img src="http://creativewebbusiness.com/wp-content/uploads/2013/05/one-does-not-simply-build-links-516x188.jpg">
+		@font-face { font-family: Futurama; src: url('fonts/futuramabold.ttf'); } 
+
+
+		h1 {
+    		
+    		color:rgb(0, 61, 255);
+    		font-size: 75px;
+		}
+
+		h2 {
+			font-family: Futurama;
+			color:rgb(0, 61, 255);
+			font-size: 40px;
+
+		}
+
+
+		html { 
+  		background: url(images/bender_background.jpg) no-repeat center center fixed; 
+  		-webkit-background-size: cover;
+  		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		background-size: cover;
+  		font-family: Futurama;
+
+		}
+
+		#name_container {
+			position: relative;
+			top: 550px;				
+			left: 145px;
+			height: 50px;
+			width: 700px;
+		}
 		
-		<h2>testing</h>
-		
-		<p>
-			Ham followed now ecstatic use speaking exercise may repeated. </br>Himself he evident oh greatly my on inhabit general concern. </br>It earnest amongst he showing females so improve in picture. </br>Mrs can hundred its greater account. Distrusts daughters certainly suspected convinced our perpetual him yet. </br>Words did noise taken right state are since. 
-		</p>
 
+		#list_container {
 
-		<ul>
-			<li>Bullet 1</li>
-			<li>Bullet 2</li>
-			<li>Bullet 3</li>
-		</ul>
+			position: fixed;
+			top: 60px;
+			left: 1000px;
+			height: 400px;
+			width: 500px;
+			
 
-		<ol>
-			<li>Numbered 1</li>
-			<li>Numbered 2</li>
-			<li>Numbered 3</li>
-		</ol>
-		
-		<h3>mail to link</h>
-		<a href="mailto:bajunio@gmail.com" title="Email Brian">Send me a message!</a>
-		<h3>reddit link</h>
-		<a href="http://www.reddit.com" target="_blank">Link Text</a>
+		}
 
-
-		<table>
-
-			<tr>
-				<th>Brian</th>
-				<th>Junio</th>
-			</tr>
-			<tc>
-				<th>Erin</th>
-				<th>Hitchcock</th>
-			</tc>
-
-		</table>
+		li {
+			/* list-style-image: url('images/planet_express.gif'); */
+			color: green;
+			font-size: 35px;
+			padding:0;
+			margin: 25px;
+			margin-left: 0px;
 
 
 
+		}
 
-	</body>
+		#li1 {
+			list-style-image: url('images/lars.png');
+   		}	
 
+		#li2 {
+   			list-style-image: url('images/farnsworth.png');
+		}
+
+		#li3 {
+			list-style-image: url('images/zoidberg.png');
+		}
+
+		#li4 {
+			list-style-image: url('images/fry.png');
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+
+	<div id="name_container">
+		<div id="name">
+			<h1>Brian Anthony Junio</h1>
+		</div>
+	</div>
+
+
+	<div id="list_container">
+		<div id="list">
+			<h2>Futurama Bold</h2>
+			<ul>
+				<li id="li1">Resume</li>
+				<li id="li2">Technical Blog</li>
+				<li id="li3">Cultural Blog</li>
+				<li id="li4">First Website</li>
+			</ul>
+
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+</body>
 </html>
+

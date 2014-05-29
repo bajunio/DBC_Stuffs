@@ -64,10 +64,34 @@
 				<h4>Classes; Variables and Methods</h4>
 
 				<p>
-					
-				
-				  
-		
+					Up until this point in my Ruby training I have not worked with
+					very many Classes.  Having now had a bit more experience with 
+					them I can see how more advanced programming will benefit from 
+					the organization they offer.  A Class can offer a single place 
+					to house multiple methods that are performing functions of a 
+					similar nature.  
+				</p>
+				<p>
+					By containing multiple common methods in a single Class object 
+					you can dictate certain shared behavior.  An object created 
+					from an example Class named Silverware may share many similar 
+					characteristics to other objects created from the same Class. 
+					Having the ease of passing these default values off to these 
+					similar objects is all due to the containing Class.
+				</p>
+				<p>
+					When telling the machine to create a new object based on a 
+					Class, a particular set of instructions are executed.  The code 
+					attempts to look for any attr_* statements.  The attr_* 
+					statements consist of the following; attr_reader, attr_writer, 
+					and attr_accessor.  Reader allows an instance variable to be read from outside the Class.  Writer allows an instance variable to be written from the outside of the Class.  Accessor is the shortcut to allow both read and write access in one command.  
+				</p>
+				<p>
+					The next thing the code will be looking for is a method entitled #initialize.  This is where you will pass any Class arguments that may be important when creating an object from the Class.  It is also where you will translate any of those incoming arguments into instance variables.  Any default values that need to be applied to every instance of the Class will be set in #initialize as well.
+				</p>
+				<p>
+					Seaking of instance variables, their application can seem a bit confusing at first glance.  I recall a very specific reading I was browsing through that referenced instance variables relationship with the seperate instances of the Class.  It was then that I was able to grasp fully why some variables would be instance and others simply regular.  This allows you to create multiple objects from the same Class but provide flexibility for them to grow in different directions.
+				</p>
 			</p>
 		</section>
 	</section>

@@ -59,16 +59,32 @@
 	</section>
 	<section id="content-box">
 		<section class="content">
-			<h2>Week 6 - OOP Vs. Functional Programming</h2>
-			<h4>Object Oriented Programming</h4>
+			<h2>Week 6 - Ruby Variable Scope</h2>
+			
 			<p>
-				
+				Variables are in constant use in pretty much every block of code out there.  Keeping track of all of them can be a bit tricky.  To help, Ruby has created a variety of scopes in which to section off your variables.  The following list will give you the symbols that designate how Ruby will read the variable assigned to it.
+			</p>
+			<ul>
+				<li>$           - A global variable.</li>
+				<li>@           - An instance variable.</li>
+				<li>[a-z] or _  - A local variable.</li>
+				<li>[A-Z]       - A constant.</li>
+				<li>@@          - A class variable.</li>
+			</ul>
+			<p>
+				The $ as indicated above creates a global variable. ($global_variable)  Assigning a variable to a global scope is discouraged as it can be read and modified from anywhere within the program.  This can lead to very difficult bug tracking.  
 			</p>
 			<p>
-
+				An instance variable is denoted by the usage of the @ sign.  (@instance_variable)  An instance variable is part of the magic that make classes so functional in Ruby.  The instance method is contained within a specific instance of a class object.  This variable can be used to contain unique information for each instance of the class.  
 			</p>
 			<p>
-				
+				Local variables are typically typed in "snake_case."  (local_variable or _local_variable)  These variables are used both inside and outside of methods and classes but limited to small sections of your code.
+			</p>
+			<p>
+				Leading with a capitol letter declares the use of a constant.  (Constant)  You would use this to assign a particular value that should not ever change.  It is important to note that Ruby will allow you to change the value of the constant after it has initially be declared.
+			</p>
+			<p>
+				Finally, the class variable.  (@@class_variable)  This is similar to the instance variable mentioned above, but slightly different.  It is constant throughout all of the instances of a class.  Where the instance variable is allowed to be different with each instance of the class, the class variable must remain the same.
 			</p>
 		</section>
 	</section>

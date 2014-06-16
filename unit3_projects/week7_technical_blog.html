@@ -59,13 +59,15 @@
 	</section>
 	<section id="content-box">
 		<section class="content">
-			<h2>Week 7 - Social Growth</h2>
+			<h2>Week 7 - SQL Injection</h2>
 			<p>
-				Revisit your "Affirming your Values" blog post and relate it to what you learned about stereotype threat.
-
-				How do you feel when you think about your values? Do you think it can help you mediate stereotype threat if you recognize you are in it?
-
-				Can you think of any other exercises you can use to help you when you are feeling down (for whatever reason) at DBC?
+				SQL Injection can be described as an attempt to execute SQL commands via a web application that may display, alter or even delete back-end database information.  This is accomplished by carefully crafted user submissions fooling the web application to run unexpected queries.  OWASP has ranked SQL Injection as the number one most common form of web application vulnerability as of their 2013 report.   
+			</p>
+			<p>
+				As mentioned above, a malicious user of your site could craft special entries to present to your web application in an attempt to compromise your security.  Imagine you weren't just housing your vast movie collection in your database, but the credit card information for your 1000+ users.  For an up and coming business, having to explain to the people keeping your lights on that you've just handed over their banking information to criminals won't do much for your image.  
+			</p>
+			<p>
+				Its important to adopt certain practices in order to prevent such attacks on your precious data.  User submissions should be inspected and validated prior to being handed off to the database.  One should keep a tight grip on user access - those with access to the data should have the least amount of privilege with said data.  Even though stored procedures are generally considered to be safe, they can be injectable.  It would be best to remove those stored procedures that are not currently in use as means of preventing their misuse.
 			</p>			
 		</section>
 	</section>

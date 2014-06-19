@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>-- Technical Blog --</title>
+	<style>
+		body {
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 960px;
+		}
+
+		header {
+			color: white;
+			text-align: center;
+			height: 15%;
+			background-color: rgb(63, 45, 45);
+
+		}
+
+		#sidebar {
+			text-align: center;
+			float: left;
+			width: 20%;
+			min-height: 625px;
+			background-color: rgb(95, 179, 95);
+		}
+
+		#content-box {
+			color: rgb(4, 20, 134);
+			padding-left: 2.5%;
+			padding-right: 2.5%;
+			float: right;
+			width: 75%;
+			min-height: 625px;
+			background-color: rgb(137, 191, 204);
+		}
+
+		p {
+			font-size: 1.1em;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<h1>Dev Bootcamp Technical Blog</h1>
+		<h3>Brian Anthony Junio</h3>
+	</header>
+	<section id="sidebar">
+		<h3>Links</h3
+		<ul>
+			<li>Under Construction</li>
+			<li>Under Construction</li>
+			<li>Under Construction</li>
+			<li>Under Construction</li>
+		</ul>
+	</section>
+	<section id="content-box">
+		<section class="content">
+			<h2>Week 8 - How The Internet Works</h2>
+			<p>
+				The internet is something that we use every day and often take for granted.  When a simple request such as calling up google.com has been made a long chain of events is triggered.  Though the process is fairly simple to explain, the fact that it works to produce something on your screen still feels a bit like magic.  I will be addressing the string of events that occur when you request a webpage from your personal machine.
+			</p>
+			<p>
+				You are connected to the internet, but what does that mean?  The internet is simply a collection of many client and server based hardware platforms all tied together by a common network.  There have been special protocols that have been written in order to handle the seemingly endless amount of traffic the internet handles on a daily basis.  Some of those protocols include TCP/IP and DNS.    
+			</p>
+			<p>
+				One's IP address is a unique identifier to establish an address of sorts for their location on the internet.  The concept can be a bit confusing if you begin to consider that different segments of the internet will know you by different IP addresses, however the typical user does not need to understand this to leverage the intenet.  IP address typically adhere to the following format: 192.168.0.1.  This is a typical example of a home network's router's IP address.
+			</p>
+			<p>
+				Imagine if you wanted to connect to www.google.com but your fear of remembering numbers prevents you from learning google's unique address on the intenet.  No more building up ad-aware for you!  This was considered and handled in the form of DNS or Domain Name System.  The job of the DNS is really cool, actually.  The IP address information is stored in a highly collaborative system of servers that associate every day naming to the IP address you are looking for.  This translates http://74.125.224.72/ into http://www.google.com, for example.
+			</p>
+			<p>
+				Of course this information isn't just left to make its way around the network on it's own.  It has the help of some hardware in the form of routers and switches.  Basically, a router has the ability to look into the bits and pieces of information that your computer transmits, accesses stamps that let it know where the data's intended destination is, and finally sends it that way.  Switches work in a similar fashion, but with much less thinking as to where the data will end up, think of the routers using the switches to guide the traffic.
+			</p>
+			<p>
+				So, to put all of this together we'd have something like the following.  You are sitting at your desk on your machine.  You open up a browser window, type in www.google.com to initiate the request for that site.  Your connection to the internet is reaching out to a DNS server that is translating your human speak into an IP address the computer will more easily understand.  Now that your data has a target, the routers will send your bits and pieces down the chain to the intended server, for this example, google.  Google will interpret this request and send back appropriate responses along the same lines of communication.
+			</p>
+		</section>
+	</section>
+</body>
+</html>
